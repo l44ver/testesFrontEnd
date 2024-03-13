@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 /* fui no google fonts, escolhi uma fonte, selecionei, e peguei o arroba import para o css */
 
 * { /* resetei o css da pagina */
@@ -12,12 +11,11 @@
 body {
     height: 100vh; /* define a altura igual à altura da janela do navegador */
     width: 100%; /* para ocupar toda a tela e nao ter scroll */
-    background-color: #000000;
-    color: #dec1ff;
+    background-color: #ff0000; /* PQ A COR DE FUNDO NAO TA MAIS ALTERANDO ???? */
 }
 
-.tituloDestaque {
-    color: #2ee3ff;
+.textoDestaque {
+    color: #c795ff;
 }
 
 .container {
@@ -27,9 +25,8 @@ body {
     justify-content: space-between; /* separarei os filhos */
 }
 
-
- /* estilizacoes para cada coisa ficar mais bonita */
 .container__conteudo {
+    color: #ffffff;
     width: 615px;
 }
 
@@ -41,4 +38,22 @@ body {
 .container__conteudo__texto {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.container__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__links__estilo {
+    background-color: #c795ff;
+    width: 190px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 18px;
+    padding: 18px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
