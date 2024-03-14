@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 /* fui no google fonts, escolhi uma fonte, selecionei, e peguei o arroba import para o css */
 
+:root { /* variavel pois sao coisas q usam varias vezes durante o codigo e a pessoa pode querer trocar */
+    --cor-primaria: #080808;
+    --cor-secundaria: #d5d5d5;
+    --cor-terciaria: #9d57ee;
+    --cor-hover: #1e1e1e;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 * { /* resetei o css da pagina para colocar do meu jeito */
     box-sizing: border-box;
     margin: 0;
@@ -9,8 +19,8 @@
 
 body {
     width: 100%;
-    background-color: #080808;
-    color: #eeeeee;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -23,10 +33,10 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     font-size: 16px;
-    color: #9d57ee;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -44,7 +54,7 @@ body {
 }
 
 .container__conteudo {
-    color: #eeeeee;
+    color: var(--cor-secundaria);
     width: 600px;
     display: flex;
     flex-direction: column;
@@ -53,20 +63,20 @@ body {
 
 .container__conteudo__titulo {
     font-size: 32px;
-    font-family: 'Krona One', sans-serif; /* utilizei oq eu importei */
+    font-family: var(--fonte-principal);
 }
 
 .container__conteudo__texto {
     font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .textoDestaque {
-    color: #9d57ee;
+    color: var(--cor-terciaria);
 }
 
 .container__links__subtitulo {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: 15px;
 }
@@ -85,18 +95,18 @@ body {
     gap: 14px;
     width: 220px;
     padding: 15px 0;
-    border: 2px solid #9d57ee;
+    border: 2px solid var(--cor-terciaria);
     border-radius: 10px;
     text-align: center;
     font-size: 16px;
     text-decoration: none;
-    color: #eeeeee;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
 }
 
 .container__links__estilo:hover {
-    background-color: #1e1e1e;
+    background-color: var(--cor-hover);
 }
 
 .container__links__img {
@@ -107,9 +117,9 @@ body {
 .rodape {
     padding: 18px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     font-size: 14px;
-    color: #080808;
-    background-color: #9d57ee;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
 }
