@@ -5,29 +5,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-y: hidden; /* Impede a rolagem vertical */
 }
 
-.body {
-    height: 100vh; /* define a altura igual à altura da janela do navegador */
-    width: 100%; /* para ocupar toda a tela e nao ter scroll */
-    background-color: #ff0000; /* PQ A COR DE FUNDO NAO TA MAIS ALTERANDO ???? */
+body {
+    width: 100%;
+    background-color: #080808;
+    color: #eeeeee;
+}
+
+.imagemHome {
+    border-radius: 24px; /* arredondei as bordas */
 }
 
 .textoDestaque {
-    color: #c795ff;
+    color: #9d57ee;
 }
 
 .container {
-    margin: 10% 15%;
+    padding: 10% 15%;
     display: flex; /* ativei o modelo flex */
     align-items: center; /* adicionei a direcao dos itens */
     justify-content: space-between; /* separarei os filhos */
 }
 
 .container__conteudo {
-    color: #ffffff;
-    width: 650px;
+    color: #eeeeee;
+    width: 600px;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -40,7 +43,7 @@
 
 .container__conteudo__texto {
     font-size: 17px;
-    font-family: 'Montserrat', sans-serif; /* utilizei oq eu importei */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container__links__subtitulo {
@@ -63,17 +66,31 @@
     gap: 14px;
     width: 220px;
     padding: 15px 0;
-    border: 2px solid #c795ff;
+    border: 2px solid #9d57ee;
     border-radius: 10px;
     text-align: center;
     font-size: 16px;
     text-decoration: none;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif; /* utilizei oq eu importei */
+    color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+.container__links__estilo:hover {
+    background-color: #1e1e1e;
 }
 
 .container__links__img {
     width: 20px; /* largura desejada */
     height: auto; /* mantém a proporção da imagem */
+}
+
+.rodape {
+    padding: 18px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #080808;
+    background-color: #9d57ee;
 }
