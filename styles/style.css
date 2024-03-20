@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 /* fui no google fonts, escolhi uma fonte, selecionei, e peguei o arroba import para o css */
 
-:root { /* variavel pois sao coisas q usam varias vezes durante o codigo e a pessoa pode querer trocar */
+:root { /* criei variaveis, pois sao coisas q usam varias vezes durante o codigo e a pessoa pode querer trocar */
     --cor-primaria: #080808;
     --cor-secundaria: #d5d5d5;
     --cor-terciaria: #9d57ee;
