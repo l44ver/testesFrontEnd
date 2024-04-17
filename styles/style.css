@@ -47,7 +47,7 @@ body {
 }
 
 .container {
-    padding: 8.5% 15%;
+    padding: 6% 15%;
     display: flex; /* ativei o modelo flex */
     align-items: center; /* adicionei a direcao dos itens */
     justify-content: space-between; /* separarei os filhos */
@@ -110,7 +110,7 @@ body {
 }
 
 .container__links__img {
-    width: 50%;
+    width: 20%;
     height: auto;
 }
 
