@@ -51,6 +51,7 @@ body {
     display: flex; /* ativei o modelo flex */
     align-items: center; /* adicionei a direcao dos itens */
     justify-content: space-between; /* separarei os filhos */
+    gap: 60px;
 }
 
 .container__conteudo {
@@ -122,4 +123,10 @@ body {
     font-size: 0.8rem;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column-reverse;
+    }
 }
