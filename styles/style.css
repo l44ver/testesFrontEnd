@@ -47,7 +47,7 @@ body {
 }
 
 .container {
-    padding: 6% 15%;
+    padding: 5% 15%;
     display: flex; /* ativei o modelo flex */
     align-items: center; /* adicionei a direcao dos itens */
     justify-content: space-between; /* separarei os filhos */
@@ -125,8 +125,15 @@ body {
     background-color: var(--cor-terciaria);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) { /* basicamente: se a tela tiver menos q 1200px de largura, o design muda */
+    .cabecalho {
+        padding: 6%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
     .container {
-        flex-direction: column-reverse;
+        padding: 5% 5%;
+        flex-direction: column-reverse;    
     }
 }
