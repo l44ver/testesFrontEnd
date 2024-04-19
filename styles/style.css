@@ -125,7 +125,7 @@ body {
     background-color: var(--cor-terciaria);
 }
 
-@media (max-width: 1200px) { /* basicamente: se a tela tiver menos q 1200px de largura, o design muda */
+@media (max-width: 1100px) { /* basicamente: se a tela tiver menos q 1200px de largura, o design muda */
     .cabecalho {
         padding: 6%;
     }
