@@ -136,4 +136,7 @@ body {
         padding: 5% 5%;
         flex-direction: column-reverse;    
     }
+    .container__conteudo {
+        width: auto; /* ou 100% */
+    }
 }
